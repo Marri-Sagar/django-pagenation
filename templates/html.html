@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    {% for obj in objec %}
+        <tr>
+        <td>
+            {{ obj.eid }}
+        </td>
+        <td>
+            {{ obj.ename }}
+        </td>
+        <td>
+            {{ obj.esal }}
+        </td>
+        </tr>
+    {% endfor %}
+</table>
+{% for x in pages %}
+    <a href="/sag/{{ x }}">{{ x }}</a>||
+
+{% endfor %}
+</body>
+</html>
